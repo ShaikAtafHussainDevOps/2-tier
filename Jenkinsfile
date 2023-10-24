@@ -8,7 +8,7 @@ pipeline{
         }
         stage("building the image"){
             steps{
-                sh 'docker build -t 2tierflask:latest .'
+                docker.build('2tierflask:latest', '.')
             }
         }
     }
