@@ -7,4 +7,9 @@ pipeline{
             }
         }
     }
+    stage("build the image"){
+        steps{
+            sh 'docker build -tag altaf18az/2tierflaskapp:latest .'
+        }
+    }
 }
