@@ -8,7 +8,7 @@ pipeline{
         }
         stage("building the image"){
             steps{
-                sh 'docker build -t altaf18az/2tierflask:latest .'
+                sh 'docker build -t 2tierflask:latest .'
             }
         }
     }
